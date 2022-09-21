@@ -1,0 +1,37 @@
+
+{% extends 'core/base.html' %}
+
+{% block title %}
+Acerca de
+{% endblock %}
+
+{% block background %} {% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografia</span>
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Raul Abelleira </h2>   
+        <p>Soy nacido en Argentina, comencé como desarrollador fulltime en 2022 y en este tiempo pude adquirir conocimientos sólidos gracias a cursos realizados en Python, Djando, Git, entre otros. </p>
+        <br>
+        <p>Detalle de los cursos</p>
+        <p>Introducción a la programación...<a href="https://open-bootcamp.com/cursos/python">Mas info</a></p>
+        <p>Python TOTAL - Programador Avanzado...<a href="https://www.udemy.com/course/python-total/">Mas info</a></p>
+        <p>Python básico - Víctor Archidona...<a href="https://open-bootcamp.com/cursos/python">Mas info</a></p>
+        <p>Django avanzado programados Backend...<a href="https://www.udemy.com/course/curso-django-2-practico-desarrollo-web-python-3/"n-total/>Mas info</a></p>
+        <p>Git, Gitlab, Github y Bitbucket - Victor Archidona...<a href="https://open-bootcamp.com/cursos/git">Mas info</a></p>
+        <!--<p>Django intermedio - Juanjo Ruiz...<a href="https://open-bootcamp.com/cursos/django">Mas info</a></p>
+        <p>SQL Intermedio - Alan Sastre...<a href="https://open-bootcamp.com/cursos/sql">Mas info</a></p>-->
+    </div>
+</div>
+{% endblock %}
+
